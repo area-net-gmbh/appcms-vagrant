@@ -5,9 +5,6 @@
 ## Die APP-CMS Plattform
 
 - **Server**: https://github.com/area-net-gmbh/appcms-server
-- **Cordova SDK / Ionic Native**: _coming soon_
-- **iOS SDK**: _coming soon_
-- **Android SDK**: _coming soon_
 
 ## Tools und mehr
 
@@ -22,6 +19,12 @@ Mit dieser Vagrant-Umgebung kann der APP-CMS Server auf einer lokalen Entwicklun
 
 - IP-Adresse: 192.160.14.15
 - Host-Name: appcms.dev
+- Base-Box: ubuntu/trusty64
+- Apache 2.4
+-- Module: rewrite, vhost_alias, headers, expires, filter, xsendfile
+- PHP 5.6
+-- Module: php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-gd, php5-mysql
+- MySQL 5.6
 
 ## Installation und erste Schritte
 
@@ -33,4 +36,5 @@ Mit dieser Vagrant-Umgebung kann der APP-CMS Server auf einer lokalen Entwicklun
 ## Start und Login
 
 - Starten der Vagrant-Box über: __vagrant up__
-- Login per: __vagrant ssh__
+- SSH-Login per: __vagrant ssh__
+- APP-CMS im Browser aufrufen: http://appcms.dev
