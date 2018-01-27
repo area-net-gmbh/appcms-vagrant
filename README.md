@@ -19,11 +19,11 @@ Mit dieser Vagrant-Umgebung kann der APP-CMS Server auf einer lokalen Entwicklun
 
 - IP-Adresse: 192.160.14.15
 - Host-Name: appcms.dev
-- Base-Box: ubuntu/trusty64
+- Base-Box: ubuntu/xenial64
 - Apache 2.4
   - Module: rewrite, vhost_alias, headers, expires, filter, xsendfile
-- PHP 5.6
-  - Module: php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-gd, php5-mysql
+- PHP 7.13
+  - Module: php7.1-fpm, php7.1-cli, php7.1-common, php7.1-mbstring, php7.1-gd, php7.1-intl, php7.1-xml, php7.1-mysql, php7.1-mcrypt, php7.1-zip
 - MySQL 5.6
 
 ## Installation und erste Schritte

@@ -2,7 +2,7 @@
 
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
-    DocumentRoot {{ apache.docroot }}/source/appcms/public
+    DocumentRoot {{ apache.docroot }}/appcms/public
     ServerName {{ apache.servername }}
 
     <Directory {{ apache.docroot }}>

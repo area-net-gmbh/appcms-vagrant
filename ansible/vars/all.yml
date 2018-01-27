@@ -6,10 +6,10 @@ server:
     locale: de_DE.UTF-8
 vagrant_local:
     install: '1'
-    vm: { base_box: trusty64, hostname: default, ip: 192.160.14.15, memory: '512', sharedfolder: ./, useVagrantCloud: '0', syncType: '0' }
+    vm: { base_box: xenial64, hostname: default, ip: 192.160.14.15, memory: '512', sharedfolder: ./, useVagrantCloud: '0', syncType: '0' }
 apache:
     install: '1'
-    docroot: /vagrant
+    docroot: /vagrant/
     servername: appcms.dev
 mysql:
     install: '1'
@@ -18,13 +18,14 @@ mysql:
     user: user
     password: pass
     dump: ''
+    ppa: mysql-5.6
 php:
     install: '1'
     upload_max_size: '20M'
     max_execution_time: 240
     memory_limit: '256M'
     ppa: php
-    packages: [php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-gd, php5-mysql]
+    packages: [php7.1-fpm, php7.1-cli, php7.1-common, php7.1-mbstring, php7.1-gd, php7.1-intl, php7.1-xml, php7.1-mysql, php7.1-mcrypt, php7.1-zip]
 xdebug:
     install: '1'
 composer:

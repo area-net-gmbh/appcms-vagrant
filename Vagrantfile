@@ -35,7 +35,7 @@ Vagrant.configure("2") do |config|
         ]
     end
 
-    config.vm.box = "ubuntu/trusty64"
+    config.vm.box = "ubuntu/xenial64"
     
     config.vm.network :private_network, ip: "192.160.14.15"
     config.ssh.forward_agent = true
