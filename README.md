@@ -21,9 +21,9 @@ Mit dieser Vagrant-Umgebung kann der APP-CMS Server auf einer lokalen Entwicklun
 - Host-Name: appcms.dev
 - Base-Box: ubuntu/trusty64
 - Apache 2.4
--- Module: rewrite, vhost_alias, headers, expires, filter, xsendfile
+  - Module: rewrite, vhost_alias, headers, expires, filter, xsendfile
 - PHP 5.6
--- Module: php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-gd, php5-mysql
+  - Module: php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-imagick, php5-gd, php5-mysql
 - MySQL 5.6
 
 ## Installation und erste Schritte
