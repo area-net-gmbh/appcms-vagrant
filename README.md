@@ -18,7 +18,7 @@ Mit dieser Vagrant-Umgebung kann der APP-CMS Server auf einer lokalen Entwicklun
 ## Entwicklungsumgebung
 
 - IP-Adresse: 192.160.14.15
-- Host-Name: appcms.dev
+- Host-Name: content.fly
 - Base-Box: ubuntu/xenial64
 - Apache 2.4
   - Module: rewrite, vhost_alias, headers, expires, filter, xsendfile

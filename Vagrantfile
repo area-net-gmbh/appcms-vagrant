@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
     
     config.vm.network :private_network, ip: "192.160.14.15"
     config.ssh.forward_agent = true
-    config.vm.hostname = "appcms.dev"
+    config.vm.hostname = "content.fly"
 
 
     # If ansible is in your path it will provision from your HOST machine
